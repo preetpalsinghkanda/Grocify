@@ -1,0 +1,303 @@
+.bag{
+    /* border: 1px solid black; */
+    height: 34rem;
+    
+
+  
+}
+
+.cart-page{
+    margin-top: 5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bag-container{
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cart-page {
+  padding: 40px;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+.cart-page h1 {
+
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px 0px 30px 0px;
+}
+
+.cart-layout {
+  display: flex;
+  gap: 30px;
+  min-width: 40vw;
+}
+
+
+.no-cart-container{
+  display: flex;
+  align-items: center;
+}
+
+.no-cart-container h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.cart-items {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cart-header,
+.cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  
+  padding: 10px 0;
+}
+
+.cart-header {
+  font-weight: bold;
+  /* border: 1px solid black; */
+
+  border-bottom: 2px solid #eee;
+}
+
+.cart-row {
+  border-bottom: 1px solid #eee;
+}
+
+
+.cart-row p{
+    font-weight: 500;
+}
+
+.final-price{
+
+ padding-left: 30px;
+  
+}
+.summary-items{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-info img {
+  width: 60px;
+  border-radius: 8px;
+}
+
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  background: #ff7a00;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ .qty-container{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+  }
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: rgba(231, 61, 61, 0.776);
+  cursor: pointer;
+}
+
+
+.cart-summary {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.cart-summary h3 {
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media (max-width: 1205px) {
+  .no-cart-container{
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .cart-layout {
+    flex-direction: column;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 740px) {
+
+  .cart-header{
+    border: none;
+    padding: 0px;
+   text-align: center; 
+  }
+
+  
+
+  .cart-items{
+    margin: 0px 10px;
+    min-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cart-page {
+    padding: 10px 0px 0px 0px;
+  }
+
+  .cart-page h1 {
+    font-size: 2rem;
+  }
+
+
+  .cart-row {
+    /* grid-template-columns: 1fr; */
+    gap: 10px;
+    padding: 15px 0;
+     place-items: center; 
+    
+  }
+
+  .product-info {
+    justify-content: flex-start;
+  }
+
+  .product-info img {
+    width: 50px;
+  }
+
+  .cart-row p {
+    font-size: 14px;
+  }
+
+  .qty-box {
+    justify-content: flex-start;
+  }
+
+  .qty-box button {
+    padding: 4px 8px;
+  }
+
+
+
+  /* Empty cart */
+  .no-cart-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .no-cart-container img {
+    width: 450px;
+  }
+
+  .no-cart-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media(max-width:520px){
+
+
+  .final-price{
+    padding-left: 0px;
+  }
+
+  .cart-row {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    
+    
+  }
+
+  .cart-header{
+    display: none;
+  }
+
+   .no-cart-container img {
+    width: 300px;
+  }
+
+  .remove-btn{
+    display: none;
+  }
+
+  .actual-price{
+    display: none;
+  }
+
+  .qty-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

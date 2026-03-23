@@ -1,0 +1,23 @@
+.wishlist-container{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.wishlist-container h2{
+     font-family: "Montserrat", sans-serif;
+    
+}
+
+.no-wishlist{
+    margin-top: 4rem;
+}
+
+
+@media(max-width:570px){
+    .no-wishlist{
+        height: 250px;
+    }
+}

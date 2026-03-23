@@ -1,0 +1,83 @@
+.hamburger-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+ font-family: "Montserrat", sans-serif;
+ /* display: none; */
+ transition: 0.3s ease-in;
+}
+
+.menu-box {
+  width: 70vw;
+  height: auto;
+
+  /* ai */
+  background: rgba(255, 190, 130, 0.35); 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 20px;
+padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  
+}
+
+.hamburger-options a {
+  text-decoration: none;   
+  color: #ff7c02;          
+}
+
+.hamburger-options{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    font-weight: 500;
+    color: black;
+    
+
+}
+
+.hamburger-search{
+     border: 3px solid #db7a2a;
+     display: none;
+     
+}
+
+.hamburger-search input{
+    background-color: transparent;
+}
+.hamburger-search input:focus{
+    background-color: transparent;
+    
+}
+
+.hamburger-search input::placeholder{
+    color: #db7a2a;
+}
+
+@media(max-width: 620px){
+    .hamburger-search{
+        display: flex;
+    }
+
+    .hamburger-search input{
+        width: 50vw;
+    }
+    .hamburger-search{
+        min-width: unset !important;
+    }
+    
+    
+}

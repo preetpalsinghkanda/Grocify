@@ -1,0 +1,131 @@
+.our-process-container {
+    /* border: 1px solid black; */
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 100px;
+    margin: 5rem 0px 6rem 0px;
+}
+
+.our-process-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+}
+
+.doted-circle {
+    border: 1px dashed black;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-process-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.line-circle {
+    border: 4px solid black;
+    border-radius: 50%;
+    width: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.line-circle span {
+    font-size: 2rem;
+}
+
+.our-process-container hr {
+
+    width: 180px;
+    height: 5px;
+    left: 60px;
+    position: relative;
+    background-color: rgba(253, 177, 0, 0.744);
+    border: none;
+    margin: 10px auto 40px auto;
+
+}
+
+.Sourcing {
+    grid-row: 2/3;
+}
+
+.Manufacturing {
+    grid-column: 2/3;
+}
+
+.Quality {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+
+.Logistics{
+    grid-column: 4/5;
+}
+
+
+@media(max-width:1340px){
+    .our-process-container {
+        padding: 0px 60px;
+    }
+}
+
+@media(max-width:1120px){
+   
+    .our-process-box{
+        gap: 15px;
+    }
+    .our-process-main{
+        gap: 60px;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .Sourcing{
+        grid-row: 1/2;
+    }
+
+    .Quality{
+        grid-column: unset;
+    }
+    .Logistics{
+        grid-column: 2/3;
+    }
+}
+
+@media(max-width:830px){
+
+    .our-process-main{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .Manufacturing{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .Quality{
+        grid-row: 3/4;
+    }
+
+    .Logistics{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .our-process-container hr {
+    
+        margin-top: 8px;
+        width: 90px;
+        height: 4px;
+        right: 150px;
+    }
+}

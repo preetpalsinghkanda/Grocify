@@ -1,0 +1,170 @@
+.hero-container {
+    height: 85vh;
+    /* border: 1px solid black; */
+
+    margin-top: 80px;
+    /* same as navbar height */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 50px;
+
+}
+
+.heading {
+    /* border: 1px solid black; */
+    padding: 0px 25px;
+}
+
+.export {
+    /* border: 1px solid black; */
+    padding: 5px 12px;
+    border-radius: 14px;
+    background-color: #ffe8cb;
+    color: #D89B4A;
+    font-weight: 600;
+
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin: 10px 0px;
+    letter-spacing: -1px;
+}
+
+h1 span {
+    color: #F97316;
+}
+
+.heading p {
+    font-size: 1rem;
+    padding-right: 190px;
+}
+
+
+
+
+
+.shop-now {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: #F97316;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.829);
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #9e4a0ec6;
+    transition: 0.3s all;
+}
+
+
+.shop-now:hover {
+    transform: scale(1.08);
+}
+
+.basket-img-container img {
+    height: 560px;
+}
+
+@media(max-width:1470px) {
+
+    .hero-container {
+        height: 70vh;
+    }
+
+    .basket-img-container img {
+        height: 460px;
+    }
+}
+
+
+@media(max-width:1355px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
+@media(max-width:1220px) {
+    
+    .hero-container {
+        margin-top: 120px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+}
+
+@media(max-width:670px) {
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+    }
+
+    .heading p {
+        padding: 0px;
+        font-size: 0.85rem;
+    }
+
+    .export {
+        font-size: 14px;
+    }
+
+    .hero-container {
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width:580px) {
+    .basket-img-container img {
+        height: 360px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+
+
+
+    .hero-container {
+        padding: 0px;
+    }
+
+
+}
+
+
+
+@media(max-width:470px) {
+
+   
+
+    .basket-img-container img {
+        height: 260px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    .export {
+        font-size: 12px;
+    }
+
+    .hero-container {
+        padding: 0px;
+    }
+
+    .item-details h4 {
+        white-space: nowrap;
+    }
+
+}
