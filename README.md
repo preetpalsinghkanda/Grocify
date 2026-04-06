@@ -33,6 +33,5 @@ https://grocify-phi-five.vercel.app/
 - React.js
 - Context API (State Management)
 - CSS3 (Flexbox & Responsive Design)
-- LocalStorage
 
 ---
